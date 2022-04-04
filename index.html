@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Itaca Clicker</title>
+    <link rel="stylesheet" href="styles.css">
+    
+</head>
+
+<body>
+    
+    <p id="partesRecibidos" class = "partes-dados">0 Partes dados.</p>
+
+     
+    <div id="navegacion">
+        <button onclick="tab('principal')" class="uwu">Ir a clase</button>
+        <button onclick="tab('tienda')"class="uwu">Ir a la tienda</button>
+    </div>
+
+
+    <div id = "principal">
+        <br><br>
+        <button onclick="darParte()" id="PartesClick">Confiscar móvil.</button>
+    </div>
+
+
+    <div id="tienda">
+        <br>
+        <button onclick="comprar()"  id="mejoraClick">Mejorar la vigilancia (10 Partes).</button>
+        <button onclick="equipos()" id="veyon" >Mejorar los equipos y ponerles Veyon (+1 P/s)(100 partes) </button>
+        <button onclick="cafe()" id="cafe">Prohibir los cafés en clase (4 P/s)(1000 partes)</button> 
+    </div>
+
+    <script src="main.js" charset="utf-8" type="text/javascript"></script>
+</body>
+</html>
