@@ -12,7 +12,7 @@ body {
 }
 
 
-#PartesClick{
+#PartesClick,#micafe{
 
     display: inline-block;
     outline: none;
@@ -30,7 +30,7 @@ body {
 
 }
 
-#PartesClick:hover {
+#PartesClick:hover, #micafe:hover {
     border-color: #b87474;
     background: #c0c0c0;
 }
@@ -65,7 +65,7 @@ body {
     background-color: #b5f1ca;
 }
 
-#mejoraClick,#cafe{
+#mejoraClick,#cafe,#deberes,#expansion,#beber{
 
   
     display: inline-block;
@@ -81,15 +81,40 @@ body {
     font-weight: 500;
     font-size: 14px;
     box-shadow: rgba(0, 0, 0, 0.05) 0px 1px 0px 0px, rgba(0, 0, 0, 0.2) 0px -1px 0px 0px inset;
-    
-
-   
 
 }
-#mejoraClick,#cafe:hover {
+
+/* noticias */
+#marquee-cont {
+    background: rgb(37, 37, 37);
+    margin-top:0px;
+  }
+  #marquee-cont marquee {
+    margin-top: 0px;
+  }
+  #marquee-news {
+    
+    background: #4ab364;
+    padding: 5px;
+  }
+  #ticker-title{
+    border:none;
+    padding:5px 20px;
+    background:#92ffc0;
+    color:black;
+  }
+  #ticker-title:focus{
+    outline:none;
+  }
+
+
+#mejoraClick:hover,#cafe:hover,#deberes:hover,#expansion:hover,#beber:hover {
     background: #006e52;
 }
-
+#jovensito {
+    display:none;
+    text-align:center;
+}
 #veyon{
 
   

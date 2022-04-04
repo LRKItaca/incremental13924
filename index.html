@@ -10,8 +10,25 @@
 </head>
 
 <body>
+    <div id="esconder">
+    <div id="marquee-cont"> <!--Esto son para las noticias, ignrorar-->
+        <table width="100%" border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="50px" style="background:#8dff9c;">
+              <button id="ticker-title">Noticias:</button>
+            </td>
+            <td id="marquee">
+              <marquee onmouseover="this.stop();" onmouseout="this.start();" id='scroll'>
+              temp <img src="https://veyon.io/img/veyon-logo.png" width="25px" />
+              </marquee>
+            </td>
+          </tr>
+        </table>
+      </div>
+
+    <p id="partesRecibidos" class = "partes-dados">0.00 Partes</p>
     
-    <p id="partesRecibidos" class = "partes-dados">0 Partes dados.</p>
+    <p id="cafesConfiscados" class = "cafes-dados">0.00 cafés</p>
 
      
     <div id="navegacion">
@@ -22,7 +39,9 @@
 
     <div id = "principal">
         <br><br>
-        <button onclick="darParte()" id="PartesClick">Confiscar móvil.</button>
+        <button onclick="darParte()" id="PartesClick">Confiscar móvil</button>
+        <button onclick="miCafe()" id ="micafe">Confiscar café</button>
+        <br>
     </div>
 
 
@@ -31,7 +50,16 @@
         <button onclick="comprar()"  id="mejoraClick">Mejorar la vigilancia (10 Partes).</button>
         <button onclick="equipos()" id="veyon" >Mejorar los equipos y ponerles Veyon (+1 P/s)(100 partes) </button>
         <button onclick="cafe()" id="cafe">Prohibir los cafés en clase (4 P/s)(1000 partes)</button> 
+        <button onclick="deberes()" id="deberes">Manda deberes (25 P/s) (10000 partes) </button>
+        <button onclick="expansion()" id="expansion">Expandete a otras ciudades (100 P/S) (100.000)</button>
+        <br><br><br>
+        <button onclick="beber()" id="beber">Bebe café, aumentando por 10% la cantidad de partes (100 cafés)</button>
+        <button onclick="dame()" id="dame">Pide a tus alumnos café (+10 Cafés por Segundo) (200 cafés)</button>
+        
     </div>
+</div>
+
+<p id = "jovensito">Has ocasionado una implosión al acumular tantos partes y cafés. Has ¿ganado?</p>
 
     <script src="main.js" charset="utf-8" type="text/javascript"></script>
 </body>
